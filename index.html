@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Smokum" rel="stylesheet">
+    </head>
+    <body>
+      <div class="contenedor" id="main">
+         
+          <div class="title">
+          <h1 id="title">Survey Form</h1>
+          </div>
+          
+          <form action="" id="survey-form" class="form">
+          <p id="description" class="description-label">Who are you?</p>
+          
+          
+          <label for="name" id="name-label" class="name-label">
+          Name:
+          </label>
+          <input type="name" id="name" required placeholder="Name">
+          <label for="email"  id="email-label" class="email-label">
+          Email:
+          </label>
+          <input type="email" id="email" required placeholder="Email">
+          <label for="age"  id="number-label" class="number-label">
+          Age:
+          </label>   
+          <input type="number" id="number" required placeholder="Age" min="18" max="70">
+          
+          
+          <label for="dropdown" class="pets-label">
+          Pets?<select name="dropdown" id="dropdown">
+              <option value="1" disabled>None</option>
+              <option value="2">A Cat</option>
+              <option value="3">A Dog</option>
+              
+          </select>
+          </label>
+          <label for="hobbies" class="hobbies-label">
+          Hobbies?
+          <ul>
+              <li><input type="checkbox" name="Reading" value="1">Reading</li>
+              <li><input type="checkbox" name="Playing Sports" value="2">Playing Sports</li>
+              <li><input type="checkbox" name="Training" value="3">Training</li>
+              <li><input type="checkbox" name="Studying" value="4">Studying</li>
+              <li><input type="checkbox" name="Watching movies" value="5">Watching movies</li>
+          </ul>
+          </label>
+          <label for="sports" class="sports-label">
+          Sports?
+          <ul>
+              <li><input type="radio" name="None" value="1">None</li>
+              <li><input type="radio" name="Soccer" value="2">Soccer</li>
+              <li><input type="radio" name="Football" value="3">Football</li>
+              <li><input type="radio" name="Basketball" value="4">Basketball</li>
+              <li><input type="radio" name="Volleyball" value="5">Volleyball</li>
+          </ul>
+          </label>
+          <label for="submit" class="submit-label">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Please be polite"></textarea>
+          <br>
+          <button type="submit" id="submit">Submit</button>
+          </label>
+          </form>
+      </div>  
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#7180b9;
+}
+.contenedor{
+    margin-top:2%;
+    margin-left:5%;
+    width:90%;
+    display:grid;
+    background:#dff3e4;
+}
+.contenedor{
+    grid-gap:20px;
+    grid-template-areas: "title"
+                         "form";
+}
+.contenedor .title{
+    grid-area:title;
+    background:#3423a6;
+    text-align:center;
+    font-size:32px;
+    color:#d8e1e9;
+}
+.contenedor .form{
+    margin:auto;
+    font-size:22px;
+    color:#393e41;
+    width:80%;
+}
+.contenedor .form,ul{
+    list-style: none;
+}
+.form{
+    display:grid;
+    grid-gap:20px;
+}
+.form > div,label{
+    display:block;
+}
+.form{
+    grid-template-areas: "description"
+                         "name-input"
+                         "email-input"
+                         "age-input"
+                         "hobbies-input"
+                         "sports-input"
+                         "pets-input" 
+                         "submit-input";
+}
