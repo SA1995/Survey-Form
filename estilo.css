@@ -11,6 +11,7 @@ body{
     width:90%;
     display:grid;
     background:#dff3e4;
+    margin-bottom:2%;
 }
 .contenedor{
     grid-gap:20px;
@@ -41,12 +42,73 @@ body{
     display:block;
 }
 .form{
-    grid-template-areas: "description"
-                         "name-input"
-                         "email-input"
-                         "age-input"
-                         "hobbies-input"
-                         "sports-input"
-                         "pets-input" 
-                         "submit-input";
+    grid-template-areas: "description description"
+                         "name-label name"
+                         "email-label email"
+                         "age-label number"
+                         "hobbies-label hobbies-input"
+                         "sports-label sports-input"
+                         "pets-label pets-input" 
+                         "submit-label submit-label";
+}
+.form .description-label{
+    grid-area:description;
+    text-align:center;
+}
+.form .name-label{
+    grid-area:name-label;
+    text-align:right;
+}
+.form .email-label{
+    grid-area:email-label;
+    text-align:right;
+}
+.form .number-label{
+    grid-area:age-label;
+    text-align:right;
+}
+.form .hobbies-label{
+    grid-area:hobbies-label;
+    text-align:right;
+}
+.form .sports-label{
+    grid-area:sports-label;
+    text-align:right;
+}
+.form .pets-label{
+    grid-area:pets-label;
+    text-align:right;
+}
+.form .submit-label{
+    grid-area:submit-label;
+    text-align:center;
+}
+
+
+.form #name{
+    grid-area:name;
+    text-align:left;
+    width:50%;
+}
+.form #email{
+    grid-area:email;
+    text-align:left;
+    width:50%;
+}
+.form #number{
+    grid-area:number;
+    text-align:left;
+    width:50%;
+}
+.form .hobbies-input{
+    grid-area:hobbies-input;
+    text-align:left;
+}
+.form .sports-input{
+    grid-area:sports-input;
+    text-align:left;
+}
+.form #dropdown{
+    grid-area:pets-input;
+    width:50%;
 }
